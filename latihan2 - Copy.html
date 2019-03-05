@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> Latihan Internal</title>
+
+    </head>
+    <body>
+        <script type="text/javascript">
+            var nama1, nama2, nama3, harga1, harga2, harga3, jumlah1,jumlah2,jumlah3, total1,total2,total3, jmlhtotal;
+            nama1 = prompt("Masukkan Nama Barang Ke-1");
+            harga1 = prompt("Masukkan Harga Barang Ke-1");
+            jumlah1 = prompt("Masukkan Jumlah Barang Ke-1");
+            
+            nama2 = prompt("Masukkan Nama Barang Ke-2");
+            harga2 = prompt("Masukkan Harga Barang Ke-2");
+            jumlah2 = prompt("Masukkan Jumlah Barang Ke-2");
+
+            nama3 = prompt("Masukkan Nama Barang Ke-3");
+            harga3 = prompt("Masukkan Harga Barang Ke-3");
+            jumlah3 = prompt("Masukkan Jumlah Barang Ke-3");
+
+            total1= harga1 * jumlah1;
+            total2= harga2 * jumlah2;
+            total3= harga3 * jumlah3;
+            jmlhtotal= total1 + total2 + total3;
+
+
+            document.write("<table border= '1'>");
+            document.write("<tr>");
+            document.write("<td> Nama </td> <td> Harga </td> <td> Jumlah </td> <td> Total </td>");
+            document.write("</tr>");
+
+            document.write("<tr>");
+            document.write("<td>"+nama1+"</td><td>"+harga1+"</td><td>"+jumlah1+"</td><td>"+total1+"</td>");
+            document.write("</tr>");
+
+            document.write("<tr>");
+            document.write("<td>"+nama2+"</td><td>"+harga2+"</td><td>"+jumlah2+"</td><td>"+total2+"</td>");
+            document.write("</tr>");
+
+            document.write("<tr>");
+            document.write("<td>"+nama3+"</td><td>"+harga3+"</td><td>"+jumlah3+"</td><td>"+total3+"</td>");
+            document.write("</tr>");
+
+            document.write("<tr>");
+            document.write("<td colspan='3'> Jumlah </td> <td>"+ jmlhtotal +"</td>");
+            document.write("</tr>");
+
+        
+            document.write("</table>");
+
+        </script>
+    </body>
+</html>
